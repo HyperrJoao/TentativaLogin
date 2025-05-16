@@ -1,0 +1,105 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Fundo inspirado na AG (Azul-marinho e branco) */
+#background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0b1e3f 0%, #1c3b6f 50%, #ffffff 100%);
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+  background-repeat: repeat;
+  opacity: 0.95;
+  z-index: -1;
+}
+
+/* Estilo do formulário */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.98);
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  width: 320px;
+  text-align: center;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+  color: #0b1e3f;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #0b1e3f;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+button {
+  padding: 12px;
+  width: 100%;
+  background-color: #0b1e3f;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #132f5c;
+}
+
+/* Esconder conteúdo */
+.hidden {
+  display: none;
+}
+
+/* Navegação pós-login */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0b1e3f;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Conteúdo principal */
+.content {
+  text-align: center;
+  color: #0b1e3f;
+}
+
+.content h1 {
+  font-size: 26p
+}

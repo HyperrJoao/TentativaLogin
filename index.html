@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal AG - Arcane</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="background"></div>
+
+  <div class="container" id="login-container">
+    <h2>Cadastro AG</h2>
+    <input type="text" id="username" placeholder="Nome de usuário" />
+    <input type="password" id="password" placeholder="Senha" />
+    <input type="password" id="confirm-password" placeholder="Confirmar senha" />
+    <button onclick="login()">Cadastrar</button>
+  </div>
+
+  <div class="container hidden" id="main-site">
+    <nav class="navbar">
+      <a href="#">🏠 Home</a>
+      <a href="#">📜 Missões</a>
+      <a href="#">⚙️ Configurações</a>
+      <a href="#" onclick="logout()">🚪 Sair</a>
+    </nav>
+    <div class="content">
+      <h1>Bem-vindo, agente da AG</h1>
+      <p>Você acessou o sistema com sucesso.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
